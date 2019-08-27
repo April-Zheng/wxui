@@ -1,0 +1,14 @@
+<!-- components/tabs/tabs.wxml -->
+<view class="tab" style="{{navStyle}}">
+  <view class="tabbar">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view id="{{index}}" class="tabbar__item {{activeIndex == index ? 'bar__item_on' : ''}}" bindtap="tabClick">
+        <view class="tabbar__title">{{item}}</view>
+      </view>
+    </block>
+    <view class="tabbar__slider" style=" transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px); width:{{sliderWidth}};"></view>
+  </view>
+  <view class="tab__panel">
+    <slot></slot>
+  </view>
+</view>

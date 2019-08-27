@@ -1,0 +1,58 @@
+/* components/tabs/tabs.wxss */
+
+.tabbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    z-index: 1001;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1rpx solid #ccc;
+    height: 90rpx;
+}
+
+.tabbar__item {
+    position: relative;
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 26rpx 0;
+    text-align: center;
+    font-size: 0
+}
+
+.tabbar__item.bar__item_on {
+    color: #1FC8CF
+}
+
+.tabbar__slider {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0;
+    /* width: 372rpx; */
+    height: 4rpx;
+    background-color: #1FC8CF;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s
+}
+
+.tabbar__title {
+    display: inline-block;
+    font-size: 15px;
+    max-width: 8em;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal
+}
+
+.tab__panel {
+    padding-top: 90rpx;
+}

@@ -1,0 +1,8 @@
+<!-- pages/example/tabs/tabs.wxml -->
+<v-tabs tabs="{{tabs}}" bind:click="tabClick">
+  <view class="tab__content">
+    <view hidden="{{activeIndex != 0}}">tabs1的内容</view>
+    <view hidden="{{activeIndex != 1}}">tabs2的内容</view>
+    <view hidden="{{activeIndex != 2}}">tabs3的内容</view>
+  </view>
+</v-tabs>
