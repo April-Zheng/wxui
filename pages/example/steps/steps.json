@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-steps": "/components/steps/steps"
+    }
+}

@@ -1,0 +1,194 @@
+/* components/steps/steps.wxss */
+
+
+/* horizontal steps style */
+
+.steps-hor-steps {
+    padding: 20px 50px 10px 50px;
+    background-color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.steps-hor-step {
+    display: inline-block;
+    white-space: normal;
+    text-align: center;
+    vertical-align: top;
+}
+
+.steps-hor-step-line {
+    position: relative;
+    margin: 6px 0;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.steps-hor-step-line.is-active {
+    background-color: #108ee9;
+}
+
+.steps-hor-step-line.is-last {
+    background-color: transparent;
+}
+
+.steps-hor-step-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 999px;
+    background-color: #ccc;
+}
+
+.steps-hor-step-icon.is-active {
+    background-color: #108ee9;
+}
+
+.steps-hor-step-text {
+    margin-top: 20px;
+    padding: 0 5px;
+    max-width: 90px;
+    transform: translateX(-50%);
+}
+
+.steps-hor-step-title {
+    font-size: 12px;
+    color: #333;
+}
+
+.steps-hor-step-description {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #999;
+}
+
+
+/* vertical steps style */
+
+.steps-vertical-steps {
+    padding: 20px 30px 0 30px;
+    background-color: #fff;
+}
+
+.steps-vertical-step {
+    display: flex;
+}
+
+.steps-vertical-step-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    margin-right: 20px;
+}
+
+
+/* line 包含 top 和 bottom 两块， 整体下移20px, 保证和原点无缝衔接 */
+
+.steps-vertical-step-line {
+    position: relative;
+    top: 10px;
+    width: 2px;
+    background-color: #ccc;
+}
+
+.steps-vertical-step-line-top {
+    flex: 1;
+}
+
+
+/* 60px 是 steps-vertical-step-text的margin-bottom的40px加上line的下移20px，保证line-top底部和右侧文字底布对齐*/
+
+.steps-vertical-step-line-bottom {
+    height: 30px;
+    width: 2px;
+    background-color: #ccc;
+}
+
+.steps-vertical-step-line.is-active {
+    background-color: #108ee9;
+}
+
+.steps-vertical-step-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 999px;
+}
+
+.steps-vertical-step-active-image,
+.steps-vertical-step-image {
+    width: 24px;
+    /* height: 24px; */
+    border-radius: 99rpx;
+}
+
+.steps-vertical-step-active-image {
+    background-color: #108ee9;
+}
+
+.steps-vertical-step-image {
+    background-color: #ccc;
+}
+
+.steps-vertical-step-icon.is-normal {
+    top: 5px;
+    background-color: #ccc;
+    width: 10px;
+    height: 10px;
+}
+
+.steps-vertical-step-icon.is-active,
+.steps-vertical-step-icon.is-fail {
+    display: flex;
+    background-color: #fff;
+}
+
+.steps-vertical-step-icon.is-noicon-active {
+    width: 10px;
+    height: 10px;
+    background: #108ee9;
+}
+
+.steps-vertical-step-right {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.steps-vertical-step-title {
+    margin-bottom: 4px;
+    font-size: 17px;
+    color: #333;
+}
+
+.steps-vertical-step-title.is-active {
+    color: #108ee9;
+}
+
+.steps-vertical-step-title.is-fail {
+    color: #F4333C;
+}
+
+.steps-vertical-step-description {
+    font-size: 14px;
+    color: #888;
+}
+
+.steps-vertical-placeholder {
+    height: 20px;
+}
+
+.steps-vertical-placeholder-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background-color: #ccc;
+}

@@ -1,0 +1,114 @@
+/**index.wxss**/
+
+.cells {
+    flex: 1;
+    position: relative;
+    background-color: #fff;
+    line-height: 1.41176471;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    font-size: 15px;
+    width: 100%;
+}
+
+.cells:first-child:before {
+    display: none;
+}
+
+.cells:before {
+    top: 0;
+    left: 20rpx;
+    right: 20rpx;
+    border-top: 1rpx solid rgba(0, 0, 0, 0.1)
+}
+
+.cells::after {
+    bottom: 0;
+    left: 20rpx;
+    right: 20rpx;
+    border-bottom: 1rpx solid rgba(0, 0, 0, 0.1)
+}
+
+.cells:after,
+.cells:before {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    color: rgba(0, 0, 0, 0.1)
+}
+
+.cells__title {
+    margin-top: .77em;
+    margin-bottom: .3em;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    color: #999;
+    font-size: 14px
+}
+
+.cells_after-title {
+    margin-top: 0
+}
+
+.cell {
+    box-sizing: border-box;
+    /* padding: 20px 20rpx; */
+    min-height: 120rpx;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 20rpx;
+}
+
+.cell:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1rpx solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.1);
+    left: 30rpx
+}
+
+.cell:first-child:before {
+    display: none;
+}
+
+.cell__bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cell__ft_in-access {
+    padding-right: 60rpx;
+    position: relative
+}
+
+.cell__ft_in-access:after {
+    content: " ";
+    display: inline-block;
+    height: 12rpx;
+    width: 12rpx;
+    border-width: 4rpx 4rpx 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    -webkit-transform: matrix(.71, .71, -.71, .71, 0, 0);
+    transform: matrix(.71, .71, -.71, .71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 2px;
+    left: 20rpx;
+}

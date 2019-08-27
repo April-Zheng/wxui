@@ -1,0 +1,4 @@
+<!-- pages/example/steps/steps.wxml -->
+<v-steps activeIndex="{{activeIndex}}" items="{{items}}"></v-steps>
+<v-steps direction='vertical' activeIndex="{{activeIndex}}" items="{{items}}"></v-steps>
+<v-steps direction='vertical' showIcon activeIndex="{{activeIndex}}" items="{{items}}"></v-steps>
