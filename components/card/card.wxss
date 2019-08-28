@@ -1,0 +1,67 @@
+/* components/card/card.wxss */
+
+.card {
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.card__content {
+    display: flex;
+    align-items: center;
+    min-height: 158rpx;
+    font-size: 14px;
+    padding: 16rpx 20rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card__content::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1rpx solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.1);
+    left: 30rpx
+}
+
+.card__content_access {
+    flex: 0.1
+}
+
+.card__content_access::after {
+    content: " ";
+    display: inline-block;
+    height: 20rpx;
+    width: 20rpx;
+    border-width: 2px 2px 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    -webkit-transform: matrix(.71, .71, -.71, .71, 0, 0);
+    transform: matrix(.71, .71, -.71, .71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 15px;
+}
+
+.card__content_bd {
+    flex: 1
+}
+
+.card__content_ft {
+    color: #666666;
+    flex: 0.5;
+    text-align: right;
+}
+
+.card__desc {
+    min-height: 80rpx;
+    padding: 16rpx 20rpx;
+    display: flex;
+    align-items: center;
+}

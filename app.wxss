@@ -5,3 +5,12 @@
     box-sizing: border-box;
     width: 100%;
 }
+
+page {
+    background-color: #EFEFF4;
+    font-family: PingFangSC-Regular, -apple-system-font, Helvetica Neue, sans-serif;
+}
+
+.title {
+    padding: 16rpx 20rpx;
+}

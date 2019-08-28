@@ -1,0 +1,15 @@
+<!-- components/card/card.wxml -->
+<view class="card">
+  <view class="card__content">
+    <view class="card__content_bd">
+      <slot name="header"></slot>
+    </view>
+    <view class="card__content_ft">
+      <slot name="footer"></slot>
+    </view>
+    <view wx:if="{{mode == 'link'}}" class="card__content_access" bindtap="onTap"></view>
+  </view>
+  <view wx:if="{{footer}}" class="card__desc">
+    <slot name="desc"></slot>
+  </view>
+</view>

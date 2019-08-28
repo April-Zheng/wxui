@@ -1,0 +1,31 @@
+<!-- pages/example/card/card.wxml -->
+<v-card>
+  <view slot='header'>card卡片</view>
+  <view slot='footer'>2018-08-28</view>
+</v-card>
+<v-card>
+  <view slot='header'>card卡片card卡片card卡片card卡片card卡片card卡片card卡片card卡片card卡片</view>
+  <view slot='footer'>2018-08-28</view>
+</v-card>
+<v-card>
+  <view slot='header'>
+    <view>card卡片</view>
+    <view>时间：2018-08-28</view>
+  </view>
+  <view slot='footer'>
+    <view style="color:#FF6A6A">删除</view>
+  </view>
+</v-card>
+<view class="title">link</view>
+<v-card mode='link' bind:ontap="onTap">
+  <view slot='header'>card卡片</view>
+  <view slot='footer'>2018-08-28</view>
+</v-card>
+<view class="title">footer</view>
+<v-card mode='link' footer bind:ontap="onTap">
+  <view slot='header'>card卡片</view>
+  <view slot='footer'>2018-08-28</view>
+  <view slot="desc">
+    <view>card卡片card卡片card卡片card卡片card卡片</view>
+  </view>
+</v-card>

@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/example/steps/steps",
-    "pages/example/tabs/tabs"
+    "pages/example/tabs/tabs",
+    "pages/example/card/card"
   ],
   "window": {
     "backgroundTextStyle": "light",

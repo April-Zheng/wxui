@@ -69,7 +69,7 @@
 /* vertical steps style */
 
 .steps-vertical-steps {
-    padding: 20px 30px 0 30px;
+    padding: 40rpx 60rpx 0 60rpx;
     background-color: #fff;
 }
 
@@ -83,8 +83,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 24px;
-    margin-right: 20px;
+    width: 48rpx;
+    margin-right: 40rpx;
 }
 
 
@@ -92,8 +92,8 @@
 
 .steps-vertical-step-line {
     position: relative;
-    top: 10px;
-    width: 2px;
+    top: 20rpx;
+    width: 4rpx;
     background-color: #ccc;
 }
 
@@ -105,8 +105,8 @@
 /* 60px 是 steps-vertical-step-text的margin-bottom的40px加上line的下移20px，保证line-top底部和右侧文字底布对齐*/
 
 .steps-vertical-step-line-bottom {
-    height: 30px;
-    width: 2px;
+    height: 60rpx;
+    width: 4rpx;
     background-color: #ccc;
 }
 
@@ -124,7 +124,7 @@
 
 .steps-vertical-step-active-image,
 .steps-vertical-step-image {
-    width: 24px;
+    width: 48rpx;
     /* height: 24px; */
     border-radius: 99rpx;
 }
@@ -138,10 +138,10 @@
 }
 
 .steps-vertical-step-icon.is-normal {
-    top: 5px;
+    top: 10rpx;
     background-color: #ccc;
-    width: 10px;
-    height: 10px;
+    width: 20rpx;
+    height: 20rpx;
 }
 
 .steps-vertical-step-icon.is-active,
@@ -151,18 +151,18 @@
 }
 
 .steps-vertical-step-icon.is-noicon-active {
-    width: 10px;
-    height: 10px;
+    width: 20rpx;
+    height: 20rpx;
     background: #108ee9;
 }
 
 .steps-vertical-step-right {
     flex: 1;
-    margin-bottom: 20px;
+    margin-bottom: 40rpx;
 }
 
 .steps-vertical-step-title {
-    margin-bottom: 4px;
+    margin-bottom: 8rpx;
     font-size: 17px;
     color: #333;
 }
@@ -189,6 +189,6 @@
     left: 50%;
     transform: translateX(-50%);
     height: 100%;
-    width: 2px;
+    width: 4rpx;
     background-color: #ccc;
 }

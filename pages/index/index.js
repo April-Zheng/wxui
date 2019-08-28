@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-27 17:40:04
+ * @LastEditTime: 2019-08-28 10:35:43
  */
 //index.js
 //获取应用实例
@@ -17,8 +17,12 @@ Page({
                 path: "pages/example/steps/steps"
             },
             {
-                title: "tabs选项卡",
+                title: "Tabs选项卡",
                 path: "pages/example/tabs/tabs"
+            },
+            {
+                title: "Card卡片",
+                path: "pages/example/card/card"
             }
         ]
     },

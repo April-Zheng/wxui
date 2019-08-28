@@ -1,4 +1,7 @@
 <!-- pages/example/steps/steps.wxml -->
+<view class="title">horizontal</view>
 <v-steps activeIndex="{{activeIndex}}" items="{{items}}"></v-steps>
+<view class="title">vertical</view>
 <v-steps direction='vertical' activeIndex="{{activeIndex}}" items="{{items}}"></v-steps>
+<view class="title">vertical icon</view>
 <v-steps direction='vertical' showIcon activeIndex="{{activeIndex}}" items="{{items}}"></v-steps>
