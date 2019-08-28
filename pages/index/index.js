@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-28 11:39:32
+ * @LastEditTime: 2019-08-28 16:54:43
  */
 //index.js
 //获取应用实例
@@ -27,6 +27,10 @@ Page({
             {
                 title: "Grid宫格",
                 path: "pages/example/grid/grid"
+            },
+            {
+                title: "Button按钮",
+                path: "pages/example/button/button"
             }
         ]
     },

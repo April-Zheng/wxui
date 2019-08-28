@@ -1,0 +1,15 @@
+<!-- components/button/button.wxml -->
+<block wx:if="{{collected}}">
+  <form bindsubmit="onCollectFormId" report-submit="true">
+    <button form-type="submit" class="v-btn v-btn-class v-btn-{{type}}  v-btn-{{shape}} v-btn-{{size}} {{plain?'v-btn-plain':''}} {{disabled?'v-btn-disabled':''}}" loading="{{loading}}" disabled="{{disabled}}" open-type="{{openType}}" bindgetuserinfo="handleOpenTypeEvent" bindcontact="handleOpenTypeEvent" bindgetphonenumber="handleOpenTypeEvent" bindopensetting="handleOpenTypeEvent">
+      <text class="{{loading?'v-btn-text-loading':''}}">{{name}}</text>
+      <slot></slot>
+    </button>
+  </form>
+</block>
+<view wx:else class="{{size=='large'?'v-btn-container':''}}">
+  <button class="v-btn v-btn-class v-btn-{{type}}  v-btn-{{shape}} v-btn-{{size}} {{plain?'v-btn-plain':''}} {{disabled?'v-btn-disabled':''}}" loading="{{loading}}" disabled="{{disabled}}" open-type="{{openType}}" bindgetuserinfo="handleOpenTypeEvent" bindcontact="handleOpenTypeEvent" bindgetphonenumber="handleOpenTypeEvent" bindopensetting="handleOpenTypeEvent">
+    <text class="{{loading?'v-btn-text-loading':''}}">{{name}}</text>
+    <slot></slot>
+  </button>
+</view>

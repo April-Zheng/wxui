@@ -1,0 +1,20 @@
+<!-- pages/example/button/button.wxml -->
+<view class="container">
+  <v-button v-btn-class="v-btn-margin" collected>mini按钮</v-button>
+  <v-button v-btn-class="v-btn-margin" size="medium" type="success" shape="semicircle">
+    medium按钮
+  </v-button>
+  <v-button v-btn-class="v-btn-margin" size="large" type="warning" shape="square">large按钮</v-button>
+  <v-button v-btn-class="v-btn-margin" size="full" type="error">full按钮</v-button>
+  <v-button plain v-btn-class="v-btn-margin">mini按钮</v-button>
+  <v-button plain v-btn-class="v-btn-margin" size="medium" type="success" shape="semicircle">
+    medium按钮
+  </v-button>
+  <v-button plain loading v-btn-class="v-btn-margin" size="large" type="warning" shape="square">
+    large按钮
+  </v-button>
+  <v-button plain disabled v-btn-class="v-btn-margin" size="full" type="error">full按钮</v-button>
+  <v-button v-btn-class="v-btn-margin" bind:getuserinfo="getUserInfo" open-type="getUserInfo" size="medium">
+    getUserInfo
+  </v-button>
+</view>

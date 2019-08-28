@@ -1,0 +1,145 @@
+/* components/button/button.wxss */
+
+button:after {
+    border-radius: 0rpx;
+    border: none;
+}
+
+.v-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 28rpx;
+    position: relative;
+    color: #fff;
+    padding: 0 12rpx;
+    box-sizing: border-box;
+}
+
+.v-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* size */
+
+.v-btn-mini {
+    height: 60rpx;
+    min-width: 140rpx;
+    font-size: 24rpx
+}
+
+.v-btn-medium {
+    height: 72rpx;
+    min-width: 280rpx
+}
+
+.v-btn-large {
+    height: 88rpx;
+    min-width: 720rpx
+}
+
+.v-btn-full {
+    border-radius: 0 !important;
+    margin: 0;
+    height: 88rpx;
+    width: 100%
+}
+
+
+/* type */
+
+.v-btn-default {
+    background-color: #108ee9;
+}
+
+.v-btn-success {
+    background-color: #34bfa3
+}
+
+.v-btn-warning {
+    background-color: #FECE57;
+    color: #333
+}
+
+.v-btn-error {
+    background-color: #E94848;
+}
+
+
+/* 圆弧 */
+
+.v-btn-circle {
+    border-radius: 8rpx
+}
+
+.v-btn-large.v-btn-circle {
+    border-radius: 9.6rpx
+}
+
+.v-btn-mini.v-btn-circle {
+    border-radius: 6rpx
+}
+
+
+/* 直角 */
+
+.v-btn-square {
+    border-radius: 0
+}
+
+
+/* 半圆 */
+
+.v-btn-semicircle {
+    border-radius: 40rpx
+}
+
+.v-btn-large.v-btn-semicircle {
+    border-radius: 48rpx
+}
+
+.v-btn-mini.v-btn-semicircle {
+    border-radius: 30rpx
+}
+
+
+/* 朴素 */
+
+.v-btn-plain {
+    background-color: #fff;
+    color: #108ee9;
+    border: 1rpx solid #108ee9
+}
+
+.v-btn-success.v-btn-plain {
+    background-color: #fff;
+    color: #34bfa3;
+    border: 1rpx solid #34bfa3
+}
+
+.v-btn-error.v-btn-plain {
+    background-color: #fff;
+    color: #E94848;
+    border: 1rpx solid #E94848
+}
+
+.v-btn-warning.v-btn-plain {
+    background-color: #fff;
+    color: #FECE57;
+    border: 1rpx solid #FECE57
+}
+
+
+/* 禁用 */
+
+.v-btn-disabled {
+    opacity: 0.8;
+}
+
+.v-btn-text-loading {
+    padding-left: 10rpx;
+}
