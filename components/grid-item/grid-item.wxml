@@ -1,0 +1,4 @@
+<!-- components/grid-item/grid-item.wxml -->
+<view class="grid-item" bindtap="onGridItemTap">
+  <slot></slot>
+</view>

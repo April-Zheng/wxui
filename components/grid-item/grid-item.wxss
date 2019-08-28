@@ -1,0 +1,6 @@
+/* components/grid-item/grid-item.wxss */
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+}

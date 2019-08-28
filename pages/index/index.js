@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-28 10:35:43
+ * @LastEditTime: 2019-08-28 11:39:32
  */
 //index.js
 //获取应用实例
@@ -23,6 +23,10 @@ Page({
             {
                 title: "Card卡片",
                 path: "pages/example/card/card"
+            },
+            {
+                title: "Grid宫格",
+                path: "pages/example/grid/grid"
             }
         ]
     },

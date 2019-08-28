@@ -1,0 +1,19 @@
+<!-- components/grid/grid.wxml -->
+<view class="grid ">
+  <block wx:for="{{list}}" wx:key="index">
+    <view style="width:{{100/(columnNum)}}%;" class="grid-item  grid-item-{{columnNum}}  {{hasLine ? '' : 'grid-no-line'}}" data-index="{{index}}" bindtap="onGridItemClick">
+      <block wx:if="{{mode == 'normal'}}">
+        <view class="grid-item-wrapper">
+          <view class="grid-icon-container">
+            <image src="{{item.icon}}" class="grid-icon" mode="aspectFit" />
+          </view>
+          <view class="grid-text-wrapper">
+            <text class="grid-text">{{item.text}}</text>
+            <text class="grid-desc" wx:if="{{ item.desc && item.desc !== ''}}">{{item.desc}}</text>
+          </view>
+        </view>
+      </block>
+      <slot wx:if="{{mode == 'custom'}}" name="{{item.key}}"></slot>
+    </view>
+  </block>
+</view>

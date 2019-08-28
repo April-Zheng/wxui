@@ -1,0 +1,16 @@
+<!-- pages/example/grid/grid.wxml -->
+<view class="container">
+  <view class="title">columnNum 2</view>
+  <v-grid bind:onItemClick="onItemClick" columnNum="{{2}}" list="{{list}}"></v-grid>
+  <view class="title">columnNum 3</view>
+  <v-grid bind:onItemClick="onItemClick" hasLine="{{false}}" columnNum="{{3}}" list="{{list}}"></v-grid>
+  <view class="title">columnNum 4</view>
+  <v-grid bind:onItemClick="onItemClick" columnNum="{{4}}" list="{{list}}"></v-grid>
+  <view class="title">custom</view>
+  <v-grid mode="custom" columnNum="{{3}}">
+    <v-grid-item key="test1" slot="test1" bind:onGridItemTap="onGridItemTap">Grid宫格</v-grid-item>
+    <v-grid-item key="test2" slot="test2">Grid宫格</v-grid-item>
+    <v-grid-item key="test3" slot="test3">Grid宫格</v-grid-item>
+    <v-grid-item key="test4" slot="test4">Grid宫格</v-grid-item>
+  </v-grid>
+</view>

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "v-grid": "/components/grid/grid",
+        "v-grid-item": "/components/grid-item/grid-item"
+    }
+}
