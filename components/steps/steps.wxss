@@ -25,7 +25,7 @@
 }
 
 .steps-hor-step-line.is-active {
-    background-color: #108ee9;
+    background-color: var(--primary-color);
 }
 
 .steps-hor-step-line.is-last {
@@ -44,7 +44,7 @@
 }
 
 .steps-hor-step-icon.is-active {
-    background-color: #108ee9;
+    background-color: var(--primary-color);
 }
 
 .steps-hor-step-text {
@@ -111,7 +111,7 @@
 }
 
 .steps-vertical-step-line.is-active {
-    background-color: #108ee9;
+    background-color: var(--primary-color);
 }
 
 .steps-vertical-step-icon {
@@ -130,7 +130,7 @@
 }
 
 .steps-vertical-step-active-image {
-    background-color: #108ee9;
+    background-color: var(--primary-color);
 }
 
 .steps-vertical-step-image {
@@ -153,7 +153,7 @@
 .steps-vertical-step-icon.is-noicon-active {
     width: 20rpx;
     height: 20rpx;
-    background: #108ee9;
+    background: var(--primary-color);
 }
 
 .steps-vertical-step-right {
@@ -168,11 +168,11 @@
 }
 
 .steps-vertical-step-title.is-active {
-    color: #108ee9;
+    color: var(--primary-color);
 }
 
 .steps-vertical-step-title.is-fail {
-    color: #F4333C;
+    color: var(--error-color);
 }
 
 .steps-vertical-step-description {
@@ -181,7 +181,7 @@
 }
 
 .steps-vertical-placeholder {
-    height: 20px;
+    height: 40rpx;
 }
 
 .steps-vertical-placeholder-line {

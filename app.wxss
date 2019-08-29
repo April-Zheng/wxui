@@ -10,6 +10,10 @@
 page {
     background-color: #EFEFF4;
     font-family: PingFangSC-Regular, -apple-system-font, Helvetica Neue, sans-serif;
+    /* 定义主色调 */
+    --primary-color: #108ee9;
+    /* 定义error color */
+    --error-color: #F4333C;
 }
 
 .title {
