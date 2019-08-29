@@ -1,0 +1,4 @@
+<!-- components/collapse/collapse.wxml -->
+<view class="v-collapse v-collapse-class">
+  <slot></slot>
+</view>

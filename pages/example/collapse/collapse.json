@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "v-collapse": "/components/collapse/collapse",
+        "v-collapse-item": "/components/collapse/collapse-item/collapse-item"
+    }
+}

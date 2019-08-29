@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-28 16:54:43
+ * @LastEditTime: 2019-08-29 10:25:40
  */
 //index.js
 //获取应用实例
@@ -31,6 +31,10 @@ Page({
             {
                 title: "Button按钮",
                 path: "pages/example/button/button"
+            },
+            {
+                title: "Collapse折叠面板",
+                path: "pages/example/collapse/collapse"
             }
         ]
     },

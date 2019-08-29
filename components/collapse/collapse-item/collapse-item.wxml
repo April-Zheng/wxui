@@ -1,0 +1,19 @@
+<!-- components/collapse/collapse-item/collapse-item.wxml -->
+<view class="v-collapse-item  v-collapse-item-class {{isActive ? 'v-collapse-item-active-class' : ''}} {{disabled ? 'v-collapse-item--disabled' : ''}}" key="{{id}}">
+  <view class="v-collapse-item-title  v-collapse-item-title-class {{isActive ? 'title--active' : ''}}" bindtap="onCollapseTap" data-key="{{id}}" data-isActive="{{isActive}}">
+    <view class="v-collapse-item-title-container">
+      <view class="v-collapse-item-title-text-wrapper">
+        <text>{{header}}</text>
+        <slot name="v-collapse-item-title"></slot>
+      </view>
+      <view class="v-collapse-item-title-arrow-container">
+        <view class="v-collapse-item-title-arrow arrow--{{isActive ? 'down' : 'right'}}"></view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{isActive}}" class="v-collapse-item-content-wrapper" style="height:{{isActive?'auto':contentHeight}};">
+    <view class="v-collapse-item-content v-collapse-item-content-class">
+      <slot name="v-collapse-item-content"></slot>
+    </view>
+  </view>
+</view>

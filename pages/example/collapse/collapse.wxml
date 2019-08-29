@@ -1,0 +1,36 @@
+<!-- pages/example/collapse/collapse.wxml -->
+<v-collapse activeKey="{{['item-11', 'item-13']}}">
+  <v-collapse-item header="标题1" collapseKey="item-11">
+    <view slot="v-collapse-item-content" class="item-content content1">
+      <view>内容区域</view>
+    </view>
+  </v-collapse-item>
+  <v-collapse-item header="标题2" collapseKey="item-12">
+    <view slot="v-collapse-item-content" class="item-content content2">
+      <view>内容区域</view>
+    </view>
+  </v-collapse-item>
+  <v-collapse-item header="标题3" collapseKey="item-13" disabled>
+    <view slot="v-collapse-item-content" class="item-content content3">
+      <view>内容区域</view>
+    </view>
+  </v-collapse-item>
+</v-collapse>
+<view class="title">accordion</view>
+<v-collapse accordion>
+  <v-collapse-item header="标题1" collapseKey="item-11" disabled>
+    <view slot="v-collapse-item-content" class="item-content content1">
+      <view>内容区域</view>
+    </view>
+  </v-collapse-item>
+  <v-collapse-item header="标题2" collapseKey="item-12">
+    <view slot="v-collapse-item-content" class="item-content content2">
+      <view>内容区域</view>
+    </view>
+  </v-collapse-item>
+  <v-collapse-item header="标题3" collapseKey="item-13">
+    <view slot="v-collapse-item-content" class="item-content content3">
+      <view>内容区域</view>
+    </view>
+  </v-collapse-item>
+</v-collapse>

@@ -1,0 +1,103 @@
+/* components/collapse/collapse-item/collapse-item.wxss */
+
+.v-collapse-item {
+    border-radius: 8rpx;
+    background-color: #fff;
+}
+
+.v-collapse-item-title-container {
+    width: 100%;
+    display: flex;
+    color: #333;
+    font-size: 17px;
+    line-height: 24px;
+    position: relative;
+    text-align: justify;
+    align-items: center;
+    padding: 16rpx 10rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.v-collapse-item-title-container::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    display: block;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    transform: scaleY(0.5);
+}
+
+.v-collapse-item--disabled .v-collapse-item-title {
+    opacity: 0.5;
+}
+
+.v-collapse-item-title {
+    background-color: #fff;
+    padding: 16rpx 10rpx;
+    border-top: 1px solid #eee;
+}
+
+.v-collapse-item-title .title--active .v-collapse-item-title-container::after {
+    content: '';
+    position: absolute;
+    background-color: #eee;
+    display: block;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    transform: scaleY(0.5);
+}
+
+.v-collapse-item-title-text-wrapper {
+    padding-right: 16px;
+    flex: 1;
+}
+
+.v-collapse-item-content-wrapper {
+    overflow-y: hidden;
+    box-sizing: border-box;
+    padding: 10rpx 16rpx;
+    /* will-change: height; */
+    transition: all 0.3s 0.1s ease-out;
+}
+
+.v-collapse-item-title-arrow-container {
+    padding-right: 30rpx;
+    position: relative;
+}
+
+.v-collapse-item-title-arrow {
+    transform: rotate(0deg);
+    transition: all 0.2s ease-out;
+    /* flex: 0.1; */
+    /* position: relative */
+}
+
+.v-collapse-item-title-arrow::after {
+    display: inline-block;
+    content: ' ';
+    height: 6px;
+    width: 6px;
+    border-width: 0 2px 2px 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform-origin: center;
+    transition: transform 0.2s;
+    /* top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 10rpx; */
+}
+
+.arrow--down {
+    transform: rotate(180deg);
+    transition: all 0.2s ease-out;
+}
