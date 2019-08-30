@@ -1,0 +1,2 @@
+<!-- pages/example/checkbox/checkbox.wxml -->
+<v-checkbox-group items="{{items}}" label="label" value="value"></v-checkbox-group>

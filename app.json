@@ -9,7 +9,7 @@
         "pages/example/button/button",
         "pages/example/collapse/collapse",
         "pages/example/uploader/uploader",
-        "pages/example/checkbox/checkbox"
+        "pages/example/checkbox-group/checkbox-group"
 
     ],
     "window": {

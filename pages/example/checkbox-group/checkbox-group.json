@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-checkbox-group": "/components/checkbox-group/checkbox-group"
+    }
+}

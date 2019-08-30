@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-30 11:09:58
+ * @LastEditTime: 2019-08-30 14:15:34
  */
 //index.js
 //获取应用实例
@@ -41,8 +41,8 @@ Page({
                 path: "pages/example/uploader/uploader"
             },
             {
-                title: "Checkbox复选框",
-                path: "pages/example/checkbox/checkbox"
+                title: "Checkbox-group复选框",
+                path: "pages/example/checkbox-group/checkbox-group"
             }
         ]
     },
