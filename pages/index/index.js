@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-29 17:22:04
+ * @LastEditTime: 2019-08-30 11:09:58
  */
 //index.js
 //获取应用实例
@@ -39,6 +39,10 @@ Page({
             {
                 title: "Uploader图片上传",
                 path: "pages/example/uploader/uploader"
+            },
+            {
+                title: "Checkbox复选框",
+                path: "pages/example/checkbox/checkbox"
             }
         ]
     },

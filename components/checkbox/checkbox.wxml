@@ -1,0 +1,11 @@
+<!-- components/checkbox/checkbox.wxml -->
+<checkbox-group class="v-checkbox-group" bindchange="checkboxChange">
+  <label class="v-checkbox-group-item" wx:for="{{items}}" wx:key="index">
+    <checkbox class="v-checkbox-group-item_check" value="{{item[value]}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />
+    <view class="v-checkbox-group-item__content v-item-class {{item.disabled ? 'v-checkbox-group-item__disabled':''}}">
+      <icon wx:if="{{!item.checked}}" class="v-checkbox-group-item_icon" type="circle" size="20"></icon>
+      <icon wx:if="{{item.checked}}" class="v-checkbox-group-item_icon" type="success" color="{{color}}" size="20"></icon>
+      <view class="v-checkbox-group-item_text">{{item[label]}}</view>
+    </view>
+  </label>
+</checkbox-group>

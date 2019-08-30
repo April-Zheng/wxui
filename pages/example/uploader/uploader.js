@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-29 17:21:41
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-29 17:37:30
+ * @LastEditTime: 2019-08-30 10:57:53
  */
 // pages/example/uploader/uploader.js
 Page({
@@ -14,16 +14,16 @@ Page({
      */
     data: {
         images: [
-          'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg',
-          'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg',
-          'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg',
-          'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg'
+            'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg',
+            'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg',
+            'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg',
+            'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg'
         ],
         images2: [
-          'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg',
-          'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg',
-          'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg',
-          'https://d-paper.i4.cn/max/2018/03/27/11/1522122316835_461370.jpg'
+            'https://d-paper.i4.cn/max/2019/04/04/11/1554349361494_922842.jpg',
+            'https://d-paper.i4.cn/max/2019/04/04/11/1554349361494_922842.jpg',
+            'https://d-paper.i4.cn/max/2019/04/04/11/1554349361494_922842.jpg',
+            'https://d-paper.i4.cn/max/2019/04/04/11/1554349361494_922842.jpg'
         ]
     },
 
@@ -33,12 +33,12 @@ Page({
         })
     },
 
-    delete(e){
-      let index = e.detail.value
-      this.data.images.splice(index,1)
-      this.setData({
-        images:this.data.images
-      })
+    delete(e) {
+        let index = e.detail.value
+        this.data.images.splice(index, 1)
+        this.setData({
+            images: this.data.images
+        })
     },
 
     /**
