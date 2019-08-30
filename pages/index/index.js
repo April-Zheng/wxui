@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-29 10:25:40
+ * @LastEditTime: 2019-08-29 17:22:04
  */
 //index.js
 //获取应用实例
@@ -35,6 +35,10 @@ Page({
             {
                 title: "Collapse折叠面板",
                 path: "pages/example/collapse/collapse"
+            },
+            {
+                title: "Uploader图片上传",
+                path: "pages/example/uploader/uploader"
             }
         ]
     },

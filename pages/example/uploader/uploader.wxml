@@ -1,0 +1,3 @@
+<!-- pages/example/uploader/uploader.wxml -->
+<v-uploader images="{{images}}" bind:uploader="uploader" bind:delete="delete"></v-uploader>
+<v-uploader has-delete="{{false}}" has-limit="{{true}}" images="{{images2}}" bind:uploader="uploader"></v-uploader>

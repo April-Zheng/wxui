@@ -1,0 +1,20 @@
+<!-- components/uploader/uploader.wxml -->
+<view class="v-uploader">
+  <view class="v-uploader_title">{{title}}</view>
+  <view class="v-uploader_files">
+    <block wx:if="{{images.length>0}}" wx:for="{{images}}" wx:key="*this">
+      <view class="v-uploader_file   {{hasDelete?'v-uploader_file__has-delete':''}}">
+        <block wx:if="{{!finishLoadFlag}}">
+          <image class="v-uploader_file__img" mode='{{mode}}' src='{{url}}' style="display:{{!finishLoadFlag ? 'block' :'none'}}" />
+        </block>     
+        <image class="v-uploader_file__img" src="{{key?item[key]:item}}" mode="{{mode}}" lazy-load="{{lazy}}" show-menu-by-longpress="{{longPress}}" data-index="{{index}}" bindtap="previewImage" bindload='finishLoad' binderror='loadError'  />
+        <view wx:if="{{hasDelete}}" class="v-uploader_file__delete_container" data-index="{{index}}" bindtap="deleteImg">
+          <image class="v-uploader_file__delete_icon" src="./images/icon_delete.png" />
+        </view>
+      </view>
+    </block>
+    <view class="v-uploader__input-box">
+      <view class="v-uploader__input" bindtap="chooseImage"></view>
+    </view>
+  </view>
+</view>
