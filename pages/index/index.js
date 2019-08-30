@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-30 14:15:34
+ * @LastEditTime: 2019-08-30 14:18:47
  */
 //index.js
 //获取应用实例
@@ -43,6 +43,10 @@ Page({
             {
                 title: "Checkbox-group复选框",
                 path: "pages/example/checkbox-group/checkbox-group"
+            },
+            {
+                title: "Radio-group单选框",
+                path: "pages/example/radio-group/radio-group"
             }
         ]
     },

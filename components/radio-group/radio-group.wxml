@@ -1,0 +1,15 @@
+<!-- components/radio-group/radio-group.wxml -->
+<radio-group class="v-radio-group" bindchange="radioChange">
+  <label class="v-radio-group-item" wx:for="{{items}}" wx:key="index">
+    <radio class="v-radio-group-item_check" value="{{item[value]}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />
+    <view class="v-radio-group-item__content v-item-class {{item.disabled ? 'v-radio-group-item__disabled':''}}">
+      <block wx:if="{{showIcon}}">
+        <icon wx:if="{{!item.checked}}" class="v-radio-group-item_icon" type="circle" size="20"></icon>
+        <icon wx:if="{{item.checked}}" class="v-radio-group-item_icon" type="success" color="{{color}}" size="20"></icon>
+      </block>
+      <view class="v-radio-group-item_text" style="color:{{!showIcon && item.checked?color:'inherit'}}">
+        {{item[label]}}
+      </view>
+    </view>
+  </label>
+</radio-group>

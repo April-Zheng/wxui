@@ -1,0 +1,2 @@
+<!-- pages/example/radio-group/radio-group.wxml -->
+<v-radio-group items="{{items}}" label="label" value="value"></v-radio-group>

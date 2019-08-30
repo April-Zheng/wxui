@@ -1,0 +1,25 @@
+/* components/radio-group/radio-group.wxss */
+
+.v-radio-group {
+    background-color: #fff;
+}
+
+.v-radio-group-item_check {
+    position: absolute;
+    left: -9999px;
+}
+
+.v-radio-group-item__content {
+    display: flex;
+    align-items: center;
+    min-height: 80rpx;
+    padding: 0 20rpx;
+}
+
+.v-radio-group-item__disabled {
+    opacity: .5;
+}
+
+.v-radio-group-item_icon {
+    padding: 0 10rpx;
+}
