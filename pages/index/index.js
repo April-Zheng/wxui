@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-30 14:18:47
+ * @LastEditTime: 2019-08-30 15:24:12
  */
 //index.js
 //获取应用实例
@@ -47,6 +47,10 @@ Page({
             {
                 title: "Radio-group单选框",
                 path: "pages/example/radio-group/radio-group"
+            },
+            {
+                title: "Capsule胶囊按钮",
+                path: "pages/example/capsule/capsule"
             }
         ]
     },

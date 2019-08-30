@@ -14,6 +14,8 @@ page {
     --primary-color: #108ee9;
     /* 定义error color */
     --error-color: #F4333C;
+    --success-color: #34bfa3;
+    --warning-color: #FECE57;
 }
 
 .title {

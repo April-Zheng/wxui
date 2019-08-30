@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-capsule": "/components/capsule/capsule"
+    }
+}

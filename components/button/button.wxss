@@ -57,11 +57,11 @@ button:after {
 }
 
 .v-btn-success {
-    background-color: #34bfa3
+    background-color: var(--success-color)
 }
 
 .v-btn-warning {
-    background-color: #FECE57;
+    background-color: var(--warning-color);
     color: #333
 }
 
@@ -117,8 +117,8 @@ button:after {
 
 .v-btn-success.v-btn-plain {
     background-color: #fff;
-    color: #34bfa3;
-    border: 1rpx solid #34bfa3
+    color: var(--success-color);
+    border: 1rpx solid var(--success-color)
 }
 
 .v-btn-error.v-btn-plain {
@@ -129,8 +129,8 @@ button:after {
 
 .v-btn-warning.v-btn-plain {
     background-color: #fff;
-    color: #FECE57;
-    border: 1rpx solid #FECE57
+    color: var(--warning-color);
+    border: 1rpx solid var(--warning-color)
 }
 
 

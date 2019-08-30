@@ -1,21 +1,24 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/example/steps/steps",
-    "pages/example/tabs/tabs",
-    "pages/example/card/card",
-    "pages/example/grid/grid",
-    "pages/example/button/button",
-    "pages/example/collapse/collapse",
-    "pages/example/uploader/uploader",
-    "pages/example/checkbox-group/checkbox-group",
-    "pages/example/radio-group/radio-group"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+
+        "pages/index/index",
+        "pages/example/steps/steps",
+        "pages/example/tabs/tabs",
+        "pages/example/card/card",
+        "pages/example/grid/grid",
+        "pages/example/button/button",
+        "pages/example/collapse/collapse",
+        "pages/example/uploader/uploader",
+        "pages/example/checkbox-group/checkbox-group",
+        "pages/example/radio-group/radio-group",
+        "pages/example/capsule/capsule"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json"
 }

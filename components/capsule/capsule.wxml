@@ -1,0 +1,9 @@
+<!-- components/capsule/capsule.wxml -->
+<view class="v-capsule v-capsule-class v-capsule-{{type}}">
+  <view class="v-capsule-wrapper v-capsule-open {{active==1?'active':''}}" data-active="1" bindtap="onTap">
+    {{openText}}
+  </view>
+  <view class="v-capsule-wrapper v-capsule-colse {{active==0?'active':''}}" data-active='0' bindtap="onTap">
+    {{colseText}}
+  </view>
+</view>

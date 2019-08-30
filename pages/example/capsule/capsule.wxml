@@ -1,0 +1,7 @@
+<!-- pages/example/capsule/capsule.wxml -->
+<view class="v-capsule-container">
+  <v-capsule v-capsule-class="v-capsule-item" bind:change="onChange"></v-capsule>
+  <v-capsule v-capsule-class="v-capsule-item" type="success" active="1"></v-capsule>
+  <v-capsule v-capsule-class="v-capsule-item" type="warning" active="0"></v-capsule>
+  <v-capsule v-capsule-class="v-capsule-item" type="error"></v-capsule>
+</view>

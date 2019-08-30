@@ -1,0 +1,82 @@
+/* components/capsule/capsule.wxss */
+
+.v-capsule {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 240rpx;
+    height: 72rpx;
+    border-radius: 18px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.v-capsule-wrapper {
+    height: 72rpx;
+    width: 50%;
+    line-height: 72rpx;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+}
+
+.v-capsule-open {
+    border-radius: 18px 0px 0px 18px !important;
+    border-right: none !important;
+}
+
+.v-capsule-colse {
+    border-radius: 0px 18px 18px 0px !important;
+}
+
+.v-capsule-default {
+    color: var(--primary-color);
+}
+
+.v-capsule-default .v-capsule-wrapper {
+    border: 1px solid var(--primary-color);
+}
+
+.v-capsule-default .active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.v-capsule-success {
+    color: var(--success-color);
+}
+
+.v-capsule-success .v-capsule-wrapper {
+    border: 1px solid var(--success-color);
+}
+
+.v-capsule-success .active {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.v-capsule-warning {
+    color: var(--warning-color);
+}
+
+.v-capsule-warning .v-capsule-wrapper {
+    border: 1px solid var(--warning-color);
+}
+
+.v-capsule-warning .active {
+    background-color: var(--warning-color);
+    color: #fff;
+}
+
+.v-capsule-error {
+    color: var(--error-color);
+}
+
+.v-capsule-error .v-capsule-wrapper {
+    border: 1px solid var(--error-color);
+}
+
+.v-capsule-error .active {
+    background-color: var(--error-color);
+    color: #fff;
+}
