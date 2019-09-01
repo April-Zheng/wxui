@@ -1,0 +1,2 @@
+<!-- pages/example/tree/tree.wxml -->
+<v-tree range='{{ treeData }}' bind:ontap='tapItem'></v-tree>

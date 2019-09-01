@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-tree": "/components/tree/tree"
+    }
+}

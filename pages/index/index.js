@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-30 15:24:12
+ * @LastEditTime: 2019-08-30 17:57:50
  */
 //index.js
 //获取应用实例
@@ -51,6 +51,10 @@ Page({
             {
                 title: "Capsule胶囊按钮",
                 path: "pages/example/capsule/capsule"
+            },
+            {
+                title: "Tree树形目录",
+                path: "pages/example/tree/tree"
             }
         ]
     },

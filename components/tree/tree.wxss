@@ -1,0 +1,96 @@
+/* components/tree/tree.wxss */
+
+.v-tree {
+    font-size: 30rpx;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: rgba(90, 90, 90, 1);
+    background-color: #fff;
+}
+
+.v-tree .v-tree-item {
+    width: 100%;
+    height: 100rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40rpx 0 30rpx;
+    border-bottom: 0.5rpx solid rgba(213, 213, 214, 0.5);
+}
+
+.v-tree .v-tree-item-child {
+    padding-left: 60rpx;
+}
+
+.v-tree .v-tree-item .text {
+    font-size: 30rpx;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: rgba(169, 169, 169, 1);
+}
+
+.v-tree .v-tree-item .v-tree-item-toggle_arrow_container {
+    min-width: 80rpx;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v-tree-item-text {
+    flex: 1;
+}
+
+.v-tree .v-tree-item .v-tree-item-toggle_arrow_container::after {
+    content: '';
+    position: absolute;
+    background-color: #eee;
+    display: block;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    transform: scaleY(0.5);
+}
+
+.v-tree-item-toggle_arrow {
+    transform: rotate(0deg);
+    transition: all 0.2s ease-out;
+    margin-top: -4px;
+    /* flex: 0.1; */
+    /* position: relative */
+}
+
+.v-tree-item-toggle_arrow::after {
+    content: " ";
+    display: inline-block;
+    height: 12rpx;
+    width: 12rpx;
+    border-width: 4rpx 4rpx 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    -webkit-transform: matrix(.71, .71, -.71, .71, 0, 0);
+    transform: matrix(.71, .71, -.71, .71, 0, 0);
+    /* position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    
+    right: 2px;
+    left: 20rpx; */
+}
+
+.arrow--down {
+    transform: rotate(90deg);
+    transition: all 0.2s ease-out;
+}
+
+.v-tree-item-check {
+    display: flex;
+    align-items: center;
+}
+
+.v-tree-item-check_icon {
+    padding: 0 10rpx;
+}
