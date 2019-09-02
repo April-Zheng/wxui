@@ -1,18 +1,21 @@
-<!-- components/tree/tree.wxml    bindtap='{{hasChildren?"toggle":"tapItem"}}' data-itemid='{{ model.id }}' -->
+<!-- components/tree/tree.wxml -->
 <view class="v-tree">
   <view class="v-tree-item">
-    <view class="v-tree-item-toggle_arrow_container" wx:if="{{hasChildren}}" data-itemid='{{ range[rangeKey] }}' bindtap="toggle">
+    <view class="v-tree-item-toggle_arrow_container" wx:if="{{hasChildren}}" data-item='{{ range }}' bindtap="toggle">
       <view class="v-tree-item-toggle_arrow arrow--{{open ? 'down' : 'right'}}"></view>
     </view>
-    <view class="v-tree-item-check" wx:if="{{!hasChildren}}" bindtap="tapItem" data-itemid='{{ range[rangeKey] }}'>
+    <view class="v-tree-item-check" wx:if="{{mutliSelect }}" bindtap="tapItem" data-item='{{ range }}'>
       <icon wx:if="{{ !range.checked}}" class="v-tree-item-check_icon" type="circle" size="18"></icon>
       <icon wx:if="{{ range.checked}}" class="v-tree-item-check_icon" type="success" color="{{color}}" size="18"></icon>
     </view>
-    <view class="v-tree-item-text">
+    <view class="v-tree-item-text" data-item='{{ range }}' bindtap='{{hasChildren?"toggle":"tapItem"}}'>
       <text>{{range.text}}</text>
     </view>
+    <!-- <view wx:if="{{!mutliSelect}}" class="v-tree-item-text {{range.checked?'v-tree-item-text-check':''}}" data-item='{{ range }}' bindtap='{{hasChildren?"toggle":"tapItem"}}'>
+      <text>{{range.text}}</text>
+    </view> -->
   </view>
   <view class="v-tree-item-child" wx:if='{{ hasChildren }}' hidden='{{ !open }}'>
-    <v-tree wx:for='{{ range.children }}' wx:key='id' range='{{ item }}'></v-tree>
+    <v-tree wx:for='{{ range.children }}' mutliSelect="{{mutliSelect}}" wx:key='id' range='{{ item }}'></v-tree>
   </view>
 </view>

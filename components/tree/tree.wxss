@@ -19,6 +19,10 @@
     border-bottom: 0.5rpx solid rgba(213, 213, 214, 0.5);
 }
 
+.v-tree-item_has_no_children {
+    padding-left: 100rpx !important;
+}
+
 .v-tree .v-tree-item-child {
     padding-left: 60rpx;
 }
@@ -93,4 +97,8 @@
 
 .v-tree-item-check_icon {
     padding: 0 10rpx;
+}
+
+.v-tree-item-text-check {
+    color: var(--primary-color)
 }

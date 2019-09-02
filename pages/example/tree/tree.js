@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-30 17:57:14
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-30 18:22:56
+ * @LastEditTime: 2019-09-02 10:21:24
  */
 // pages/example/tree/tree.js
 Page({
@@ -55,7 +55,7 @@ Page({
         },
     },
     tapItem: function(e) {
-        console.log(e.detail.itemid);
+        console.log('tap', e.detail.value);
     },
 
     /**
