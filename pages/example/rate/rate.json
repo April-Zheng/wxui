@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-rate": "/components/rate/rate"
+    }
+}

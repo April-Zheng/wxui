@@ -1,0 +1,7 @@
+<!-- components/rate/rate.wxml -->
+<view class="v-rate">
+  <view wx:for="{{max}}" wx:key="index" data-index="{{index}}" bindtap="ontap" class="v-rate-item">
+    <image class="v-rate-icon" src="{{(index+1)<= value ?activeImg : inactiveImg}}" />
+  </view>
+  <view wx:if="{{showText}}" class="v-rate-text">{{texts[(value-1)]}}</view>
+</view>

@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-02 11:10:44
+ * @LastEditTime: 2019-09-02 15:26:32
  */
 //index.js
 //获取应用实例
@@ -40,11 +40,13 @@ Page({
                 title: "Input输入框",
                 path: "pages/example/input/input"
             },
-
-
             {
                 title: "Radio-group单选框",
                 path: "pages/example/radio-group/radio-group"
+            },
+            {
+                title: "Rate评分",
+                path: "pages/example/rate/rate"
             },
             {
                 title: "Steps步骤条",

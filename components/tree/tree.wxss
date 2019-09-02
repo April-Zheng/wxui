@@ -69,13 +69,20 @@
 .v-tree-item-toggle_arrow::after {
     content: " ";
     display: inline-block;
-    height: 12rpx;
+    /* height: 12rpx;
     width: 12rpx;
     border-width: 4rpx 4rpx 0 0;
     border-color: #c8c8cd;
     border-style: solid;
     -webkit-transform: matrix(.71, .71, -.71, .71, 0, 0);
-    transform: matrix(.71, .71, -.71, .71, 0, 0);
+    transform: matrix(.71, .71, -.71, .71, 0, 0); */
+    width: 0;
+    height: 0;
+    border-top: 10rpx solid transparent;
+    border-left: 10rpx solid #ccc;
+    border-bottom: 10rpx solid transparent;
+    font-size: 0;
+    line-height: 0;
     /* position: relative;
     top: -2px;
     position: absolute;
