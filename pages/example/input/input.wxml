@@ -1,0 +1,4 @@
+<!-- pages/example/input/input.wxml -->
+<v-input label="输入框" required clearable/>
+
+<v-input label="输入框" border />
