@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-29 17:21:41
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-30 10:57:53
+ * @LastEditTime: 2019-09-02 10:55:15
  */
 // pages/example/uploader/uploader.js
 Page({
@@ -30,6 +30,11 @@ Page({
     uploader(e) {
         this.setData({
             images: this.data.images.concat(e.detail.tempFilePaths)
+        })
+    },
+    uploader2(e) {
+        this.setData({
+            images2: this.data.images2.concat(e.detail.tempFilePaths)
         })
     },
 

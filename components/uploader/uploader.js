@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-29 16:20:45
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-30 10:52:32
+ * @LastEditTime: 2019-09-02 10:54:13
  */
 // components/uploader/uploader.js
 Component({
@@ -42,7 +42,7 @@ Component({
             type: Number,
             value: 9
         },
-        title: {
+        tips: {
             type: String,
             value: `上传图片超出限制`
         },
@@ -73,7 +73,7 @@ Component({
             let _this = this
             if (_this.data.hasLimit && _this.data.images.length >= _this.data.limit) {
                 wx.showToast({
-                    title: _this.data.title,
+                    title: _this.data.tips,
                     icon: 'none',
                     duration: 4000
                 })
