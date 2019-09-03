@@ -1,0 +1,32 @@
+/* components/count-down/count-item.wxss */
+
+.v-countdown {
+    font-size: 28rpx;
+    line-height: 40px;
+    background-color: #fff;
+    padding: 0 16rpx;
+}
+
+.v-countdown-item {
+    display: inline-block;
+    color: inherit;
+    padding-right: 16rpx;
+}
+
+.v-countdown-time {
+    display: inline-flex;
+    width: 56rpx;
+    height: 56rpx;
+    /* background: var(--primary-color); */
+    /* background: rgba(69, 82, 107, 1); */
+    /* border-radius: 4rpx; */
+    color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.v-countdown-time_solid {
+    background: rgba(69, 82, 107, 1);
+    border-radius: 4rpx;
+    color: #fff;
+}

@@ -1,0 +1,7 @@
+<!-- components/count-down/count-item.wxml -->
+<view class="v-class v-countdown ">
+  <view class="v-countdown-item" wx:for="{{date}}" wx:key="{{index}}">
+    <text class="v-class-time v-countdown-time v-countdown-time_{{textType}}">{{item.value}}</text>
+    {{item.name}}
+  </view>
+</view>

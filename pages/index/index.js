@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-03 09:54:55
+ * @LastEditTime: 2019-09-03 11:22:12
  */
 //index.js
 //获取应用实例
@@ -31,6 +31,10 @@ Page({
             {
                 title: "Collapse折叠面板",
                 path: "pages/example/collapse/collapse"
+            },
+            {
+                title: "Count-down倒计时",
+                path: "pages/example/count-down/count-down"
             },
             {
                 title: "Grid宫格",

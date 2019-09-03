@@ -1,0 +1,11 @@
+<!-- pages/example/count-down/count-down.wxml -->
+<v-count-down time="2019-09-04 00:00" />
+<view class="title">自定义日期模板</view>
+<v-count-down time-type="second" time="60" format="{%s}秒" bind:end="end" />
+<v-count-down time-type="second" time="1500" format="{%m}:{%s}" />
+<v-count-down time-type="second" time="3690" format="{%h}:{%m}:{%s}" />
+<v-count-down time-type="second" time="-1500" />
+<view class="title">纪念日模式</view>
+<v-count-down text-type="solid" time="2019-01-14" countdown-type="anniversary" />
+<view class="title">自定义样式</view>
+<v-count-down v-class-time="countdown-blue" time="1500" time-type="second" v-class="countdown-text" />
