@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-02 15:26:32
+ * @LastEditTime: 2019-09-03 09:47:26
  */
 //index.js
 //获取应用实例
@@ -82,5 +82,14 @@ Page({
     onLoad: function() {
 
     },
+
+    onShow: function() {
+        if (typeof this.getTabBar === 'function' &&
+            this.getTabBar()) {
+            this.getTabBar().setData({
+                selected: 0
+            })
+        }
+    }
 
 })
