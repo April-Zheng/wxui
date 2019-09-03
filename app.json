@@ -1,5 +1,7 @@
 {
     "pages": [
+
+        
         "pages/index/index",
         "pages/example/steps/steps",
         "pages/example/tabs/tabs",
@@ -14,7 +16,8 @@
         "pages/example/tree/tree",
         "pages/example/input/input",
         "pages/example/rate/rate",
-        "pages/usercenter/usercenter"
+        "pages/usercenter/usercenter",
+        "pages/example/searchbar/searchbar"
     ],
     "window": {
         "backgroundTextStyle": "light",

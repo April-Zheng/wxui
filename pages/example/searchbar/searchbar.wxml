@@ -1,0 +1,3 @@
+<!-- pages/example/searchbar/searchbar.wxml -->
+<v-search-bar show-confirm show-cancel bind:confirm="confirm"></v-search-bar>
+<v-search-bar box-bg-color="#108ee9" shape="circle" bg-color="#fff" clearable show-confirm></v-search-bar>

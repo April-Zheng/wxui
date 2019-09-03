@@ -3,7 +3,7 @@
   <view class="v-input-label {{required?'v-input-required':''}}">{{label}}</view>
   <view class="v-input-value_container {{border?'v-input-value_container_border':''}}">
 <input class="v-input-value " placeholder="{{placeholder}}" placeholder-style="{{placehoderStyle}}" placeholder-class="{{placeholderClass}}" maxlength="{{maxlength}}" focus="{{focus}}" confirm-type="{{confirmType}}" confirm-hold="{{confirmHold}}" disabled="{{disabled}}" password="{{password}}" type="{{type}}" value="{{value}}" bindinput="handleInputChange" bindfocus="handleInputFocus" bindblur="handleInputBlur" bindconfirm="handleInputConfirm" />
-  <icon class="v-input-icon" wx:if="{{clearable}}" bindtap="handleClearTap" type="clear" size="18" />
+  <icon class="v-input-icon" wx:if="{{clearable&&value}}" bindtap="handleClearTap" type="clear" size="15" />
   </view>
   
 </view>

@@ -12,6 +12,7 @@ page {
     font-family: PingFangSC-Regular, -apple-system-font, Helvetica Neue, sans-serif;
     /* 定义主色调 */
     --primary-color: #108ee9;
+    /* --primary-color: #1FC8CF; */
     /* 定义error color */
     --error-color: #F4333C;
     --success-color: #34bfa3;

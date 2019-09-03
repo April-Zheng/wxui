@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-03 09:47:26
+ * @LastEditTime: 2019-09-03 09:54:55
  */
 //index.js
 //获取应用实例
@@ -47,6 +47,10 @@ Page({
             {
                 title: "Rate评分",
                 path: "pages/example/rate/rate"
+            },
+            {
+                title: "Search-bar搜索栏",
+                path: "pages/example/searchbar/searchbar"
             },
             {
                 title: "Steps步骤条",
