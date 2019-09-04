@@ -1,14 +1,19 @@
 <!-- components/tabs/tabs.wxml -->
-<view class="tab" style="{{navStyle}}">
-  <view class="tabbar">
-    <block wx:for="{{tabs}}" wx:key="*this">
-      <view id="{{index}}" class="tabbar__item {{activeIndex == index ? 'bar__item_on' : ''}}" bindtap="tabClick">
-        <view class="tabbar__title">{{item}}</view>
-      </view>
-    </block>
-    <view class="tabbar__slider" style=" transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px); width:{{sliderWidth}};"></view>
-  </view>
-  <view class="tab__panel">
+<view class="v-tabs v-tabs-{{direction}} v-tabs-class">
+  <scroll-view scroll-x="{{direction=='horizontal'&& scrollable}}" scroll-y="{{direction=='vertical'&& scrollable}}" class="v-tab-scroll v-tab-scroll_{{direction}} {{border? 'v-tab-scroll_border':''}}" style="height:{{direction=='vertical'&& scrollable?verticalHeight+'rpx':''}};">
+    <view class="v-tab v-tab-class">
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <view id="{{index}}" class="v-tab__item {{activeIndex == index ? 'bar__item_on' : ''}}" bindtap="tabClick">
+          <view class="v-tab__title">{{item}}</view>
+        </view>
+      </block>
+      <block wx:if="{{slider}}">
+        <view wx:if="{{direction=='horizontal'}}" class="v-tab__slider {{scrollable? 'v-tab-scroll__slider':''}}" style="transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px); width:{{sliderWidth}}; "></view>
+        <view wx:if="{{direction=='vertical'}}" class="v-tab__slider {{scrollable? 'v-tab-scroll__slider':''}}" style="transform: translateY({{sliderOffsetY}}px);  -webkit-transform: translateY({{sliderOffsetY}}px); height:{{sliderWidth}}"></view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class="v-tab__panel v-panel-class">
     <slot></slot>
   </view>
 </view>

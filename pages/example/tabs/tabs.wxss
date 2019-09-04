@@ -1,1 +1,4 @@
-/* pages/example/tabs/tabs.wxss */
+.tab__content{
+  height:200rpx;
+  padding:20rpx;
+}

@@ -1,8 +1,49 @@
 <!-- pages/example/tabs/tabs.wxml -->
-<v-tabs tabs="{{tabs}}" bind:click="tabClick">
-  <view class="tab__content">
-    <view hidden="{{activeIndex != 0}}">tabs1的内容</view>
-    <view hidden="{{activeIndex != 1}}">tabs2的内容</view>
-    <view hidden="{{activeIndex != 2}}">tabs3的内容</view>
-  </view>
-</v-tabs>
+<view class="container">
+  <view class="title">horizontal</view>
+  <v-tabs tabs="{{tabs}}" border slider bind:click="tabClick">
+    <view class="tab__content">
+      <view hidden="{{activeIndex != 0}}">tabs1的内容</view>
+      <view hidden="{{activeIndex != 1}}">tabs2的内容</view>
+      <view hidden="{{activeIndex != 2}}">tabs3的内容</view>
+    </view>
+  </v-tabs>
+  <view class="title">horizontal scrollable</view>
+  <v-tabs scrollable slider tabs="{{tabs2}}" bind:click="tabClick2">
+    <view class="tab__content">
+      <view hidden="{{activeIndex2 != 0}}">tabs1的内容</view>
+      <view hidden="{{activeIndex2 != 1}}">tabs2的内容</view>
+      <view hidden="{{activeIndex2 != 2}}">tabs3的内容</view>
+      <view hidden="{{activeIndex2 != 3}}">tabs4的内容</view>
+      <view hidden="{{activeIndex2 != 4}}">tabs5的内容</view>
+      <view hidden="{{activeIndex2 != 5}}">tabs6的内容</view>
+      <view hidden="{{activeIndex2 != 6}}">tabs7的内容</view>
+      <view hidden="{{activeIndex2 != 7}}">tabs8的内容</view>
+      <view hidden="{{activeIndex2 != 8}}">tabs9的内容</view>
+      <view hidden="{{activeIndex2 != 9}}">tabs10的内容</view>
+    </view>
+  </v-tabs>
+  <view class="title">vertical</view>
+  <v-tabs tabs="{{tabs}}" direction="vertical" bind:click="tabClick">
+    <view class="tab__content">
+      <view hidden="{{activeIndex != 0}}">tabs1的内容</view>
+      <view hidden="{{activeIndex != 1}}">tabs2的内容</view>
+      <view hidden="{{activeIndex != 2}}">tabs3的内容</view>
+    </view>
+  </v-tabs>
+  <view class="title">vertical scrollable</view>
+  <v-tabs scrollable border direction="vertical" slider tabs="{{tabs2}}" bind:click="tabClick2">
+    <view class="tab__content">
+      <view hidden="{{activeIndex2 != 0}}">tabs1的内容</view>
+      <view hidden="{{activeIndex2 != 1}}">tabs2的内容</view>
+      <view hidden="{{activeIndex2 != 2}}">tabs3的内容</view>
+      <view hidden="{{activeIndex2 != 3}}">tabs4的内容</view>
+      <view hidden="{{activeIndex2 != 4}}">tabs5的内容</view>
+      <view hidden="{{activeIndex2 != 5}}">tabs6的内容</view>
+      <view hidden="{{activeIndex2 != 6}}">tabs7的内容</view>
+      <view hidden="{{activeIndex2 != 7}}">tabs8的内容</view>
+      <view hidden="{{activeIndex2 != 8}}">tabs9的内容</view>
+      <view hidden="{{activeIndex2 != 9}}">tabs10的内容</view>
+    </view>
+  </v-tabs>
+</view>

@@ -1,39 +1,81 @@
 /* components/tabs/tabs.wxss */
 
-.tabbar {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    position: absolute;
-    z-index: 1001;
-    top: 0;
-    width: 100%;
+.v-tabs {
     background-color: #fff;
-    border-bottom: 1rpx solid #ccc;
+}
+
+.v-tabs-vertical {
+    display: flex;
+    flex-direction: row;
+}
+
+.v-tabs-vertical .v-tab-scroll {
+    width: 20%;
+}
+
+.v-tabs-vertical .v-tab-scroll_border {
+    border-right: 1rpx solid #ccc;
+}
+
+.v-tabs-vertical .v-tab__panel {
+    padding: 26rpx;
+}
+
+.v-tabs-vertical .v-tab-scroll_border .v-tab__item {
+  border-bottom: 1rpx solid #ccc;
+}
+
+
+/*
+  direction=vertical slider
+*/
+
+.v-tabs-vertical .v-tab__slider {
+    position: absolute;
+    content: " ";
+    right: 0;
+    top: 0;
+    width: 2rpx;
+    background-color: var(--primary-color);
+    /* transition: .2s all linear; */
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s
+}
+
+.v-tabs-vertical .v-tab-scroll__slider {
+    padding: 26rpx 0;
+}
+
+.v-tabs-horizontal .v-tab-scroll {
+    width: 100%;
     height: 90rpx;
 }
 
-.tabbar__item {
+.v-tabs-horizontal .v-tab-scroll_border {
+    border-bottom: 1rpx solid #ccc;
+}
+
+.v-tabs-horizontal .v-tab-scroll .v-tab {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
     position: relative;
-    display: block;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    padding: 26rpx 0;
-    text-align: center;
-    font-size: 0
+    z-index: 1001;
+    top: 0;
 }
 
-.tabbar__item.bar__item_on {
-    color: var(--primary-color)
-}
 
-.tabbar__slider {
+/*
+  direction=horizontal slider
+*/
+
+.v-tabs-horizontal .v-tab__slider {
     position: absolute;
     content: " ";
     left: 0;
     bottom: 0;
-    /* width: 372rpx; */
     height: 4rpx;
     background-color: var(--primary-color);
     -webkit-transition: -webkit-transform .3s;
@@ -42,7 +84,26 @@
     transition: transform .3s, -webkit-transform .3s
 }
 
-.tabbar__title {
+.v-tabs-horizontal .v-tab-scroll__slider {
+    padding: 0 26rpx;
+}
+
+.v-tab__item {
+    position: relative;
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 26rpx;
+    text-align: center;
+    font-size: 0
+}
+
+.v-tab__item.bar__item_on {
+    color: var(--primary-color)
+}
+
+.v-tab__title {
     display: inline-block;
     font-size: 15px;
     max-width: 8em;
@@ -51,8 +112,4 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     word-wrap: normal
-}
-
-.tab__panel {
-    padding-top: 90rpx;
 }

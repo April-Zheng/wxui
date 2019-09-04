@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 17:38:15
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-27 17:46:32
+ * @LastEditTime: 2019-09-04 10:04:49
  */
 // pages/example/tabs/tabs.js
 Page({
@@ -14,12 +14,19 @@ Page({
      */
     data: {
         tabs: ['tabs1', 'tabs2', 'tabs3'],
-        activeIndex: 0
+        tabs2: ['tabs1', 'tabs2', 'tabs3', 'tabs4', 'tabs5', 'tabs6', 'tabs7', 'tabs8', 'tabs9', 'tabs10'],
+        activeIndex: 0,
+        activeIndex2: 0
     },
 
     tabClick(e) {
         this.setData({
             activeIndex: e.detail.value
+        })
+    },
+    tabClick2(e) {
+        this.setData({
+            activeIndex2: e.detail.value
         })
     },
 

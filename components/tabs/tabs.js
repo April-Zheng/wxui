@@ -4,16 +4,36 @@
  * @version: 
  * @Date: 2019-08-27 17:35:33
  * @LastEditors: zlp
- * @LastEditTime: 2019-08-27 17:45:04
+ * @LastEditTime: 2019-09-04 11:27:35
  */
 // components/tabs/tabs.js
 Component({
+    externalClasses: ['v-tabs-class', 'v-tab-class','v-panel-class'],
     /**
      * 组件的属性列表
      */
     properties: {
         tabs: Array,
-        navStyle: String
+        direction: {
+            type: String,
+            value: 'horizontal' // vertical
+        },
+        border: {
+            type: Boolean,
+            value: false
+        },
+        verticalHeight: {
+            type: null,
+            value: 400
+        },
+        scrollable: {
+            type: Boolean,
+            value: false
+        },
+        slider: {
+            type: Boolean,
+            value: false
+        }
     },
 
     /**
@@ -21,14 +41,16 @@ Component({
      */
     data: {
         sliderOffset: 0,
-        activeIndex: 0
+        activeIndex: 0,
+        sliderWidth: 0,
+        sliderOffsetY:0
     },
 
     attached() {
         this.init()
     },
     options: {
-        styleIsolation: 'apply-shared'
+
     },
 
     /**
@@ -36,13 +58,16 @@ Component({
      */
     methods: {
         tabClick: function(e) {
-            this.setData({
-                sliderOffset: e.currentTarget.offsetLeft,
-                activeIndex: e.currentTarget.id,
-            });
             let detail = {
                 value: e.currentTarget.id
             }
+            
+            this.setData({
+                sliderOffset: e.currentTarget.offsetLeft,
+                activeIndex: e.currentTarget.id,
+                sliderOffsetY:e.currentTarget.offsetTop
+            });
+            console.log(e,this.data.sliderOffset) 
             this.triggerEvent("click", detail);
 
         },
