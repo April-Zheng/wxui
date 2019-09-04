@@ -1,0 +1,45 @@
+/* components/notice-bar/notice-bar.wxss */
+
+.v-noticebar {
+    display: flex;
+    align-items: center;
+    height: 72rpx;
+    width: 100%;
+    line-height: 72rpx;
+    font-size: 28rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    background-color: #dfedff;
+    overflow: hidden;
+}
+
+.v-noticebar-img {
+    width: 40rpx;
+    height: 40rpx;
+    padding-right: 10rpx;
+}
+
+.v-noticebar-icon {
+    width: 60rpx;
+    height: 72rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v-noticebar-content-wrap {
+    display: flex;
+    margin-left: 5rpx;
+    flex: 1;
+    height: 72rpx;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.v-noticebar-content-wrap .v-noticebar-content {
+    position: absolute;
+    transition-duration: 20s
+}

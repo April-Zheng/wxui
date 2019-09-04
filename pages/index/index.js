@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-03 11:22:12
+ * @LastEditTime: 2019-09-04 14:43:58
  */
 //index.js
 //获取应用实例
@@ -43,6 +43,10 @@ Page({
             {
                 title: "Input输入框",
                 path: "pages/example/input/input"
+            },
+            {
+                title: "Notice-bar通知栏",
+                path: "pages/example/notice-bar/notice-bar"
             },
             {
                 title: "Radio-group单选框",

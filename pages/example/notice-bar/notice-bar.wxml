@@ -1,0 +1,9 @@
+<!-- pages/example/notice-bar/notice-bar.wxml -->
+<view class="title">notice-bar still</view>
+<v-notice-bar>notice-bar通告栏</v-notice-bar>
+<view class="title">notice-bar roll</view>
+<v-notice-bar type="roll">
+  notice-bar通告栏notice-bar通告栏notice-bar通告栏notice-bar通告栏notice-bar通告栏notice-bar通告栏
+</v-notice-bar>
+<view class="title">notice-bar swiper</view>
+<v-notice-bar closeable type="swiper" speed="500" swiper-items="{{arr}}" bind:ontap="onSwip"></v-notice-bar>

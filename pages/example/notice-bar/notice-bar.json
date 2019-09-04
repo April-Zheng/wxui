@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-notice-bar": "/components/notice-bar/notice-bar"
+    }
+}

@@ -1,0 +1,15 @@
+<!-- components/notice-bar/notice-bar.wxml -->
+<view wx:if="{{show}}" class="v-noticebar v-noticebar-class">
+  <image class="v-noticebar-img" src="{{src}}" />
+  <swiper autoplay vertical interval="{{4*speed}}" class="v-noticebar-content-wrap v-notice-content-class" wx:if="{{type=='swiper'}}">
+    <block wx:for="{{swiperItems}}" wx:key="swip">
+      <swiper-item data-index="{{index}}" bindtap="onSwip">{{item}}</swiper-item>
+    </block>
+  </swiper>
+  <view class="v-noticebar-content-wrap  v-notice-content-class" wx:else>
+    <view class="v-noticebar-content" bindtap="handleTap" animation="{{ animationData }}">
+      <slot></slot>
+    </view>
+  </view>
+  <icon wx:if="{{closeable}}" class="v-noticebar-icon" bindtap="onClose" type="clear" size="15" />
+</view>

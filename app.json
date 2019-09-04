@@ -1,6 +1,5 @@
 {
     "pages": [
-
         "pages/index/index",
         "pages/example/steps/steps",
         "pages/example/tabs/tabs",
@@ -17,7 +16,8 @@
         "pages/example/rate/rate",
         "pages/usercenter/usercenter",
         "pages/example/searchbar/searchbar",
-        "pages/example/count-down/count-down"
+        "pages/example/count-down/count-down",
+        "pages/example/notice-bar/notice-bar"
     ],
     "window": {
         "backgroundTextStyle": "light",
