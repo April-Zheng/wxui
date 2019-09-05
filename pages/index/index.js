@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-04 14:43:58
+ * @LastEditTime: 2019-09-05 09:53:39
  */
 //index.js
 //获取应用实例
@@ -67,6 +67,10 @@ Page({
             {
                 title: "Tabs选项卡",
                 path: "pages/example/tabs/tabs"
+            },
+            {
+                title: "Toast提示",
+                path: "pages/example/toast/toast"
             },
             {
                 title: "Tree树形目录",

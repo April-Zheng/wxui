@@ -1,0 +1,5 @@
+<!-- pages/example/toast/toast.wxml -->
+<view wx:for="{{btns}}" wx:key="index" class="v-btn-container">
+  <v-button size="medium" data-item="{{item}}" bindtap="showToast">{{item.name}}</v-button>
+</view>
+<v-toast show="{{currentConfig.show}}" content="{{currentConfig.content}}" type="{{currentConfig.type}}" mask="{{currentConfig.mask}}" position="{{currentConfig.position}}" duration="{{currentConfig.duration}}"></v-toast>

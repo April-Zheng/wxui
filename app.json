@@ -1,5 +1,6 @@
 {
     "pages": [
+
         "pages/index/index",
         "pages/example/steps/steps",
         "pages/example/tabs/tabs",
@@ -17,7 +18,8 @@
         "pages/usercenter/usercenter",
         "pages/example/searchbar/searchbar",
         "pages/example/count-down/count-down",
-        "pages/example/notice-bar/notice-bar"
+        "pages/example/notice-bar/notice-bar",
+        "pages/example/toast/toast"
     ],
     "window": {
         "backgroundTextStyle": "light",

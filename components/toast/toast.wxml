@@ -1,0 +1,10 @@
+<!-- components/toast/toast.wxml -->
+<view class="v-toast-container v-container-class v-toast-container_{{position}}" hidden="{{!show}}">
+  <view class="v-toast-mask v-mask-class" wx:if="{{mask}}" bindtap="onMaskTap" catchtouchmove="preventTouchMove"></view>
+  <view class="v-toast v-toast-class v-toast_{{position}}">
+    <icon wx:if="{{type}}" type="{{type}}" size="20" color="#fff" class="v-toast-icon v-icon-class" />
+    <image wx:elif="{{image}}" src="{{image}}" class="v-toast-icon  v-icon-class" />
+    <slot wx:else></slot>
+    <view class="v-toast-text  v-text-class">{{content}}</view>
+  </view>
+</view>

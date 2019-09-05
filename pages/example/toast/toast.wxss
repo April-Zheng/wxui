@@ -1,0 +1,5 @@
+/* pages/example/toast/toast.wxss */
+
+.v-btn-container {
+    padding: 10rpx;
+}
