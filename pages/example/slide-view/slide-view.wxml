@@ -1,0 +1,13 @@
+<!-- pages/example/slide-view/slide-view.wxml -->
+<v-slide-view slide-width="340" auto-close>
+  <view slot="left" class="left">
+    <view class='left-con'>
+      <text class='left-title'>slider-view</text>
+    </view>
+  </view>
+  <view slot="right" class="right">
+    <view class='right1'>操作1</view>
+    <view class='right2'>操作2</view>
+    <view class='del'>删除</view>
+  </view>
+</v-slide-view>

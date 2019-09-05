@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-05 09:53:39
+ * @LastEditTime: 2019-09-05 14:09:39
  */
 //index.js
 //获取应用实例
@@ -59,6 +59,10 @@ Page({
             {
                 title: "Search-bar搜索栏",
                 path: "pages/example/searchbar/searchbar"
+            },
+            {
+                title: "Slide-view左滑菜单",
+                path: "pages/example/slide-view/slide-view"
             },
             {
                 title: "Steps步骤条",
