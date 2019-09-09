@@ -1,0 +1,7 @@
+/* pages/example/text-elip/text-elip.wxss */
+
+.container {
+    background: #fff;
+    font-size: 15px;
+    padding: 10rpx;
+}

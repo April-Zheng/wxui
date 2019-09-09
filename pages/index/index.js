@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-05 14:09:39
+ * @LastEditTime: 2019-09-09 14:35:06
  */
 //index.js
 //获取应用实例
@@ -71,6 +71,10 @@ Page({
             {
                 title: "Tabs选项卡",
                 path: "pages/example/tabs/tabs"
+            },
+            {
+                title: "Text-elip文本溢出截断",
+                path: "pages/example/text-elip/text-elip"
             },
             {
                 title: "Toast提示",

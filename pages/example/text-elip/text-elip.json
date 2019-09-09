@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-text-elip": "/components/text-elip/text-elip"
+    }
+}

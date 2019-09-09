@@ -19,7 +19,8 @@
     "pages/example/count-down/count-down",
     "pages/example/notice-bar/notice-bar",
     "pages/example/toast/toast",
-    "pages/example/slide-view/slide-view"
+    "pages/example/slide-view/slide-view",
+    "pages/example/text-elip/text-elip"
   ],
   "window": {
     "backgroundTextStyle": "light",

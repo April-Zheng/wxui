@@ -1,0 +1,4 @@
+<!-- components/text-elip/text-elip.wxml -->
+<view class="v-text-elip {{line>1? 'v-text-elip_multiple':''}}" style="{{line > 1 ? '-webkit-line-clamp:' + line + ' ;' : ''}}">
+  <slot></slot>
+</view>

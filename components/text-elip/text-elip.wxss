@@ -1,0 +1,14 @@
+/* components/text-elip/text-elip.wxss */
+
+.v-text-elip {
+    background: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.v-text-elip_multiple {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}

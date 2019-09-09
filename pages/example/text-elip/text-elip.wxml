@@ -1,0 +1,7 @@
+<!-- pages/example/text-elip/text-elip.wxml -->
+<view class="container">
+  <view class="title">单行</view>
+  <v-text-elip>{{text}}</v-text-elip>
+  <view class="title">多行</view>
+  <v-text-elip line="{{2}}">{{text}}</v-text-elip>
+</view>
