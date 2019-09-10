@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-09-05 09:51:54
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-05 11:31:44
+ * @LastEditTime: 2019-09-10 10:24:27
  */
 // components/toast/toast.js
 Component({

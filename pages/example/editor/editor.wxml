@@ -1,0 +1,4 @@
+<!-- pages/example/editor/editor.wxml -->
+<view class="container">
+  <v-editor></v-editor>
+</view>

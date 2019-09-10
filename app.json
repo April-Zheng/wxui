@@ -20,7 +20,8 @@
     "pages/example/notice-bar/notice-bar",
     "pages/example/toast/toast",
     "pages/example/slide-view/slide-view",
-    "pages/example/text-elip/text-elip"
+    "pages/example/text-elip/text-elip",
+    "pages/example/editor/editor"
   ],
   "window": {
     "backgroundTextStyle": "light",

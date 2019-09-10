@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-30 17:57:05
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-02 10:49:29
+ * @LastEditTime: 2019-09-10 10:15:58
  */
 // components/tree/tree.js externalClasses: ['v-tree-class'],
 Component({
@@ -18,6 +18,10 @@ Component({
             type: String,
             value: 'id'
         },
+        label: {
+            type: String,
+            value: 'text'
+        },
         mutliSelect: {
             type: Boolean,
             value: false
@@ -30,6 +34,15 @@ Component({
     },
 
     methods: {
+        nodesTap(e) {
+            let item = e.currentTarget.dataset.item;
+            let hasChildren = this.checkHasChildren(item)
+            if (hasChildren) {
+                this.toggle(e)
+            } else {
+                this.tapItem(e)
+            }
+        },
         toggle: function(e) {
             let item = e.currentTarget.dataset.item;
             if (this.data.hasChildren) {
@@ -44,7 +57,7 @@ Component({
             this.triggerEvent('toggle', detail);
         },
         tapItem: function(e) {
-            console.log(e)
+            // console.log(e)
             let item = e.currentTarget.dataset.item;
             if (this.data.mutliSelect) {
                 this.selectAll(this.data.range)
@@ -61,7 +74,7 @@ Component({
                 value: item
             }
 
-            console.log(this.data.range);
+            // console.log(this.data.range);
             this.triggerEvent('ontap', detail);
         },
 

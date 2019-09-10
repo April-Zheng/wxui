@@ -1,11 +1,14 @@
 <!-- index.wxml -->
 <view class="container">
-  <view wx:for="{{list}}" wx:key="index">
+  <!-- <view wx:for="{{list}}" wx:key="index">
     <view class="cells" data-path="{{item.path}}" bindtap="navigateToPage">
       <view class="cell cell_access" hover-class="cell_active">
         <view class="cell__bd">{{item.title}}</view>
         <view class="cell__ft cell__ft_in-access"></view>
       </view>
     </view>
+  </view> -->
+  <view wx:for="{{datas}}" wx:key="index">
+    <v-tree range='{{ item }}' range-key="title" label="title" bind:ontap='navigateToPage'></v-tree>
   </view>
 </view>

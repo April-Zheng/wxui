@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-09-05 09:52:07
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-05 11:29:41
+ * @LastEditTime: 2019-09-10 10:25:57
  */
 // pages/example/toast/toast.js
 Page({
@@ -18,8 +18,9 @@ Page({
                 name: "toast_top_icon提示",
                 content: "toast_top_icon提示",
                 position: 'top',
-                mask: false,
-                type: "cancel"
+                duration: 1500,
+                type: "cancel",
+
             },
             {
                 show: true,
@@ -34,13 +35,14 @@ Page({
                 name: "toast_bottom提示",
                 content: "toast_bottom提示",
                 position: 'bottom',
-                mask: false
+                duration: 1500,
             }
         ],
         currentConfig: {}
     },
 
     showToast(e) {
+        console.log(e)
         let item = e.currentTarget.dataset.item
         this.setData({
             currentConfig: item

@@ -9,13 +9,13 @@
       <icon wx:if="{{ range.checked}}" class="v-tree-item-check_icon" type="success" color="{{color}}" size="18"></icon>
     </view>
     <view class="v-tree-item-text" data-item='{{ range }}' bindtap='{{hasChildren?"toggle":"tapItem"}}'>
-      <text>{{range.text}}</text>
+      <text>{{range[label]}}</text>
     </view>
     <!-- <view wx:if="{{!mutliSelect}}" class="v-tree-item-text {{range.checked?'v-tree-item-text-check':''}}" data-item='{{ range }}' bindtap='{{hasChildren?"toggle":"tapItem"}}'>
-      <text>{{range.text}}</text>
+      <text>{{range[label]}}</text>
     </view> -->
   </view>
   <view class="v-tree-item-child" wx:if='{{ hasChildren }}' hidden='{{ !open }}'>
-    <v-tree wx:for='{{ range.children }}' mutliSelect="{{mutliSelect}}" wx:key='id' range='{{ item }}'></v-tree>
+    <v-tree wx:for='{{ range.children }}' mutliSelect="{{mutliSelect}}" wx:key='index' range='{{ item }}' label="{{label}}" data-item="{{item}}" bind:ontap='nodesTap'></v-tree>
   </view>
 </view>

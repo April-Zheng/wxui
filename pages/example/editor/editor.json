@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-editor": "/components/editor/editor"
+    }
+}
