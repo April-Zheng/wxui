@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-09-10 10:46:33
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-10 14:55:38
+ * @LastEditTime: 2019-09-10 16:11:41
  */
 // components/editor/editor.js
 Component({
@@ -17,6 +17,7 @@ Component({
             type: null,
             value: 0
         },
+        showToolbar: { type: Boolean, value: true },
         readOnly: { type: Boolean, value: false },
         placeholder: { type: String, value: '开始输入...' },
         focus: { type: Boolean, value: false },

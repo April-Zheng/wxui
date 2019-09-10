@@ -1,7 +1,7 @@
 <!-- components/editor/editor.wxml -->
 <view class="page-body">
   <view class='wrapper'>
-    <view class='toolbar' bindtap="format">
+    <view wx:if="{{showToolbar}}" class='toolbar' bindtap="format">
       <i class="iconfont icon-zitijiacu {{formats.bold ? 'v-active' : ''}}" data-name="bold"></i>
       <i class="iconfont icon-zitixieti {{formats.italic ? 'v-active' : ''}}" data-name="italic"></i>
       <i class="iconfont icon-zitixiahuaxian {{formats.underline ? 'v-active' : ''}}" data-name="underline"></i>
