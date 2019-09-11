@@ -1,2 +1,27 @@
-<!--pages/usercenter/usercenter.wxml-->
-<text>pages/usercenter/usercenter.wxml</text>
+<!-- pages/usercenter/usercenter.wxml -->
+<view class="board">
+  <view class="title">日期格式化</view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">日期：</view>
+      <input value="{{date}}" bindinput="getInputValue" />
+    </view>
+  </view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">格式：</view>
+      <picker range="formats" bindchange="bindchange">
+        <view>{{formats[index]}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="cells-btn">
+    <v-button bindtap="format">日期格式化</v-button>
+  </view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">格式后日期：</view>
+      {{formatDate}}
+    </view>
+  </view>
+</view>
