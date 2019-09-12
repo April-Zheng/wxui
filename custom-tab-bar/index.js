@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-09-03 09:31:59
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-03 09:43:28
+ * @LastEditTime: 2019-09-12 09:46:30
  */
 // components/custom-tab-bar/index.js
 const app = getApp()
@@ -29,9 +29,9 @@ Component({
             },
             {
                 pagePath: "/pages/usercenter/usercenter",
-                text: "我的",
-                iconPath: "/images/icon/menu_my@3x.png",
-                selectedIconPath: "/images/icon/menu_my_sel@3x.png",
+                text: "其他",
+                iconPath: "/images/icon/menu_discover@3x.png",
+                selectedIconPath: "/images/icon/menu_discover_sel@3x.png",
                 isScan: false,
             }
         ],

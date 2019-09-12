@@ -2,31 +2,21 @@
  * @Author: zlp
  * @Description: 
  * @version: 
- * @Date: 2019-09-03 09:41:43
+ * @Date: 2019-09-12 09:56:56
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-12 10:15:31
+ * @LastEditTime: 2019-09-12 14:08:20
  */
-// pages/usercenter/usercenter.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        list: [
-            { title: "Map组件", path: "others/map/map" },
-            { title: "Javascript常用", path: "others/utils/utils" }
-        ]
+        latitude: "",
+        longitude: "",
+        markers: []
     },
 
-    navigateToPage(e) {
-        let path = e.currentTarget.dataset.path
-        if (path) {
-            wx.navigateTo({
-                url: path
-            })
-        }
-    },
 
     /**
      * 生命周期函数--监听页面加载
@@ -43,14 +33,7 @@ Page({
     /**
      * 生命周期函数--监听页面显示
      */
-    onShow: function() {
-        if (typeof this.getTabBar === 'function' &&
-            this.getTabBar()) {
-            this.getTabBar().setData({
-                selected: 2
-            })
-        }
-    },
+    onShow: function() {},
 
     /**
      * 生命周期函数--监听页面隐藏

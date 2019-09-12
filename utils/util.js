@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-11 17:07:14
+ * @LastEditTime: 2019-09-12 10:38:41
  */
 const formatTime = date => {
     const year = date.getFullYear()
@@ -61,7 +61,7 @@ const formatDate = (oldDate, fmt = 'yyyy-MM-dd hh:mm') => {
      * @param {*} num 
      */
 const getDate = (num) => {
-    return Date.now() + num * 24 * 60 * 60 * 1000
+    return formatDate(Date.now() + num * 24 * 60 * 60 * 1000)
 }
 
 /**

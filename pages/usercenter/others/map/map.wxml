@@ -1,0 +1,1 @@
+<map id="map" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location enable-zoom include-points="{{markers}}" />

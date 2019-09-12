@@ -4,7 +4,7 @@
  * @version: 
  * @Date: 2019-08-27 16:57:24
  * @LastEditors: zlp
- * @LastEditTime: 2019-09-10 10:45:00
+ * @LastEditTime: 2019-09-11 10:11:55
  */
 //index.js
 //获取应用实例
@@ -67,6 +67,10 @@ Page({
             {
                 title: "功能组件",
                 children: [{
+                        title: "Nav-bar自定义导航栏",
+                        path: "pages/example/nav-bar/nav-bar"
+                    },
+                    {
                         title: "Notice-bar通知栏",
                         path: "pages/example/notice-bar/notice-bar"
                     },

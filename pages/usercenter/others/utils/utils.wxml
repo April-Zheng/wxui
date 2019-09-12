@@ -1,0 +1,85 @@
+<view class="board">
+  <view class="title">日期格式化</view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">当前日期：</view>
+      <input class="cell__ft" value="{{date}}" disabled="{{true}}" bindinput="getInputValue" />
+    </view>
+  </view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">当前格式：</view>
+      <picker class="cell__ft" range="formats" data-type="date" bindchange="bindchange">
+        <view>{{formats[index]}}</view>
+      </picker>
+      <view class="cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class="cells-btn">
+    <v-button data-type="date" bindtap="format">日期格式化</v-button>
+  </view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">格式后日期：</view>
+      {{formatDate}}
+    </view>
+  </view>
+</view>
+<view class="board">
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">当前日期(时间戳)：</view>
+      <input class="cell__ft" value="{{timestamp}}" disabled="{{true}}" bindinput="getInputValue" />
+    </view>
+  </view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">当前格式：</view>
+      <picker class="cell__ft" range="formats" data-type="timestamp" bindchange="bindchange">
+        <view>{{formats[timestampIndex]}}</view>
+      </picker>
+      <view class="cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class="cells-btn">
+    <v-button data-type="timestamp" bindtap="format">日期格式化</v-button>
+  </view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">格式后日期：</view>
+      {{formatTimestamp}}
+    </view>
+  </view>
+</view>
+<view class="board">
+  <view class="title">获取过去/未来几天的时间</view>
+  <view class="cells">
+    <view class="cell">
+      <input class="cell__ft" type="number" placeholder="请输入" value="{{datenum}}" data-type="datenum" bindinput="getInputValue" />
+      <v-button bindtap="getDate">获取</v-button>
+    </view>
+  </view>
+  <view class="tips">负数为过去时间，正数为未来时间</view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">结果日期：</view>
+      {{beforeOrAfterDate}}
+    </view>
+  </view>
+</view>
+
+<view class="board">
+  <view class="title">格式化金额</view>
+  <view class="cells">
+    <view class="cell">
+      <input class="cell__ft" type="number" placeholder="请输入" value="{{money}}" data-type="money" bindinput="getInputValue" />
+      <v-button bindtap="formatMoney">获取</v-button>
+    </view>
+  </view>
+  <view class="cells">
+    <view class="cell">
+      <view class="cell__bd">结果金额：</view>
+      {{formatMoney}}
+    </view>
+  </view>
+</view>

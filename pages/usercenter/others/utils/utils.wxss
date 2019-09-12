@@ -1,4 +1,7 @@
-/* pages/usercenter/usercenter.wxss */
+.board {
+    margin-bottom: 20rpx;
+    /* background-color: #fff; */
+}
 
 .cells {
     flex: 1;
@@ -87,6 +90,15 @@
 }
 
 .cell__bd {
+    -webkit-box-flex: 0.6;
+    -webkit-flex: 0.6;
+    flex: 0.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cell__ft {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
@@ -117,4 +129,10 @@
     margin-top: -4px;
     right: 2px;
     left: 20rpx;
+}
+
+.tips {
+    color: #c8c8cd;
+    font-size: 12px;
+    padding: 5rpx;
 }
